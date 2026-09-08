@@ -15,9 +15,9 @@
     slider.style.setProperty('--image-left', `${(rect.width - width) / 2}px`);
     slider.style.setProperty('--image-top', `${(rect.height - height) / 2}px`);
     slider.style.setProperty('--image-width', `${width}px`);
+    slider.style.setProperty('--image-height', `${height}px`);
   }
   function fitSlider() {
-    if (after.naturalWidth && after.naturalHeight) slider.style.aspectRatio = `${after.naturalWidth} / ${after.naturalHeight}`;
     positionLabels();
   }
   function update(value) {
@@ -38,7 +38,7 @@
     if (event.key === 'ArrowRight') { update(position + 1); event.preventDefault(); }
   });
   after.addEventListener('load', fitSlider);
-  window.addEventListener('resize', positionLabels);
+  new ResizeObserver(positionLabels).observe(slider);
   fitSlider();
   update(position);
 })();

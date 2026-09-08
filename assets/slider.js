@@ -15,9 +15,9 @@
     slider.style.setProperty('--image-left', `${(rect.width - width) / 2}px`);
     slider.style.setProperty('--image-top', `${(rect.height - height) / 2}px`);
     slider.style.setProperty('--image-width', `${width}px`);
+    slider.style.setProperty('--image-height', `${height}px`);
   }
   function fitSlider() {
-    if (mid.naturalWidth && mid.naturalHeight) slider.style.aspectRatio = `${mid.naturalWidth} / ${mid.naturalHeight}`;
     positionLabels();
   }
   function update() {
@@ -70,7 +70,7 @@
   slider.addEventListener('pointerup', () => { activeHandle = null; });
 
   mid.addEventListener('load', fitSlider);
-  window.addEventListener('resize', positionLabels);
+  new ResizeObserver(positionLabels).observe(slider);
   fitSlider();
   update();
 })();

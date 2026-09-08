@@ -29,6 +29,17 @@ Paste one snippet per comparison wherever it should appear. Adjust
         loading="lazy" title="Comparison 3"></iframe>
 ```
 
+```html
+<iframe src="https://ifieb-cas-cz.github.io/web_sliders/slide-4.html"
+        style="width:100%; max-width:480px; aspect-ratio:1; border:0;"
+        loading="lazy" title="Comparison 4"></iframe>
+```
+
+Comparisons 1-3 use a dual-handle, 3-image slider
+(`assets/slider.css`/`assets/slider.js`). Comparison 4 is a
+placeholder using the original single-handle, 2-image slider
+(`assets/slider-single.css`/`assets/slider-single.js`).
+
 GitHub Pages does not send `X-Frame-Options`, so framing is allowed by
 default. If the target site enforces a CSP, allow-list
 `ifieb-cas-cz.github.io` under `frame-src`.

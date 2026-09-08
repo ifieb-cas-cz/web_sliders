@@ -3,17 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Comparison 3</title>
+  <title>MIRAVA - 3</title>
   <link rel="stylesheet" href="assets/slider.css">
 </head>
 <body>
-  <div class="ba-slider" aria-label="Before and after image comparison">
-    <img class="ba-after" src="images/slide-3-after.png" alt="After">
-    <img class="ba-before" src="images/slide-3-before.png" alt="Before">
-    <div class="ba-line"></div>
-    <div class="ba-handle" role="slider" aria-label="Comparison position" tabindex="0"><svg width="20" height="16" viewBox="0 0 20 16" fill="none" aria-hidden="true"><path d="M6 2L2 8l4 6M14 2l4 6-4 6" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="10" y1="1" x2="10" y2="15" stroke="#d1d5db" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-    <div class="ba-label ba-label-before">BEFORE</div>
-    <div class="ba-label ba-label-after">AFTER</div>
+  <div class="ba-slider" aria-label="Left, middle, right image comparison">
+    <img class="ba-mid" src="images/slide-3-middle.png" alt="Middle">
+    <img class="ba-left" src="images/slide-3-left.png" alt="Left">
+    <img class="ba-right" src="images/slide-3-right.png" alt="Right">
+    <div class="ba-line ba-line-a"></div>
+    <div class="ba-line ba-line-b"></div>
+    <div class="ba-handle ba-handle-a" role="slider" aria-label="Left divider position" tabindex="0">
+      <svg width="20" height="16" viewBox="0 0 20 16" fill="none" aria-hidden="true"><path d="M6 2L2 8l4 6M14 2l4 6-4 6" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="10" y1="1" x2="10" y2="15" stroke="#d1d5db" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </div>
+    <div class="ba-handle ba-handle-b" role="slider" aria-label="Right divider position" tabindex="0">
+      <svg width="20" height="16" viewBox="0 0 20 16" fill="none" aria-hidden="true"><path d="M6 2L2 8l4 6M14 2l4 6-4 6" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="10" y1="1" x2="10" y2="15" stroke="#d1d5db" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </div>
+    <div class="ba-label ba-label-left">CONFOCAL</div>
+    <div class="ba-label ba-label-mid">STED</div>
+    <div class="ba-label ba-label-right">STED, deconvolved</div>
   </div>
   <script src="assets/slider.js"></script>
 </body>

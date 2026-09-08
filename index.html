@@ -9,6 +9,9 @@
     main { max-width: 700px; margin: auto; }
     a { display: block; margin: 16px 0; padding: 18px 22px; border-radius: 8px; background: white; color: #202124; text-decoration: none; font-weight: bold; }
     a:hover { background: #e8eaed; }
+    h2 { margin-top: 48px; }
+    pre { background: #111214; padding: 14px 16px; border-radius: 8px; overflow-x: auto; font-size: 13px; }
+    code { color: #e8eaed; }
   </style>
 </head>
 <body>
@@ -17,6 +20,17 @@
     <a href="slide-1.html">Comparison 1</a>
     <a href="slide-2.html">Comparison 2</a>
     <a href="slide-3.html">Comparison 3</a>
+
+    <h2>Embed on another site (iframe)</h2>
+    <pre><code>&lt;iframe src="https://ifieb-cas-cz.github.io/web_sliders/slide-1.html"
+        style="width:100%; max-width:480px; aspect-ratio:1; border:0;"
+        loading="lazy" title="Comparison 1"&gt;&lt;/iframe&gt;</code></pre>
+    <pre><code>&lt;iframe src="https://ifieb-cas-cz.github.io/web_sliders/slide-2.html"
+        style="width:100%; max-width:480px; aspect-ratio:1; border:0;"
+        loading="lazy" title="Comparison 2"&gt;&lt;/iframe&gt;</code></pre>
+    <pre><code>&lt;iframe src="https://ifieb-cas-cz.github.io/web_sliders/slide-3.html"
+        style="width:100%; max-width:480px; aspect-ratio:1; border:0;"
+        loading="lazy" title="Comparison 3"&gt;&lt;/iframe&gt;</code></pre>
   </main>
 </body>
 </html>

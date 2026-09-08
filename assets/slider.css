@@ -1,6 +1,7 @@
 * { box-sizing: border-box; }
-html, body { margin: 0; height: 100%; background: transparent; font-family: Arial, sans-serif; }
-.ba-slider { position: relative; width: 100%; aspect-ratio: 1; overflow: hidden; user-select: none; touch-action: none; background: transparent; --pos-a: 33%; --pos-b: 67%; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: transparent; font-family: Arial, sans-serif; }
+body { display: grid; place-items: center; }
+.ba-slider { position: relative; width: min(100vw, 100vh); aspect-ratio: 1; overflow: hidden; user-select: none; touch-action: none; background: transparent; container-type: inline-size; --pos-a: 33%; --pos-b: 67%; }
 .ba-slider img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; pointer-events: none; }
 .ba-mid { z-index: 1; }
 .ba-left { z-index: 2; clip-path: inset(0 calc(100% - var(--pos-a)) 0 0); }
@@ -12,7 +13,7 @@ html, body { margin: 0; height: 100%; background: transparent; font-family: Aria
 .ba-handle-a { left: var(--pos-a); }
 .ba-handle-b { left: var(--pos-b); }
 .ba-handle svg { pointer-events: none; }
-.ba-label { position: absolute; top: calc(var(--image-top, 0px) + 12px); padding: 6px 14px; border-radius: 999px; background: rgba(0,0,0,.65); color: #fff; font-size: clamp(14px, 2.2vw, 24px); font-weight: 700; z-index: 30; pointer-events: none; }
+.ba-label { position: absolute; top: calc(var(--image-top, 0px) + 12px); padding: 6px 14px; border-radius: 999px; background: rgba(0,0,0,.65); color: #fff; font-size: clamp(14px, 4.4cqw, 24px); font-weight: 700; z-index: 30; pointer-events: none; }
 .ba-label-left { left: calc(var(--image-left, 0px) + 12px); }
 .ba-label-mid { left: 50%; transform: translateX(-50%); }
 .ba-label-right { right: auto; left: calc(var(--image-left, 0px) + var(--image-width, 100%) - 12px); transform: translateX(-100%); }
